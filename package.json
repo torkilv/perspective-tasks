@@ -1,14 +1,14 @@
 {
-	"name": "perspective-api-lists",
-	"version": "0.0.1",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/perspective/perspective-api-lists.git"
-	},
-	"devDependencies": {
-		"mocha": "*",
-		"should": "*",
-		"sinon": "*"
-	},
-	"main": "./lib/lists"
+  "name": "perspective-api-lists",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/perspective/perspective-api-lists.git"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "sinon": "*"
+  },
+  "main": "./lib/lists"
 }
