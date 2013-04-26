@@ -4,7 +4,7 @@
   "licence": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/perspective/perspective-api-lists.git"
+    "url": "git://github.com/perspective/perspective-api-tasks.git"
   },
   "dependencies": {
     "perspective-validation": "*"
