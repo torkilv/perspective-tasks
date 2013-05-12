@@ -7,7 +7,8 @@
     "url": "git://github.com/perspective/perspective-api-tasks.git"
   },
   "dependencies": {
-    "perspective-validation": "*"
+    "perspective-validation": "*",
+    "q": "~0.9.3"
   },
   "devDependencies": {
     "mocha": "*",
