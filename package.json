@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "perspective-core": "*",
-    "q": "~0.9.3"
+    "q": "~0.9.7",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {
     "mocha": "*",
