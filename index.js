@@ -1,10 +1,10 @@
-var tasksResource = require('./tasks/tasksResource');
-var TasksRepository = require('./tasks/tasksRepository');
-var TasksService = require('./tasks/tasksService');
+var tasksResource = require('./lib/tasks/tasksResource');
+var TasksRepository = require('./lib/tasks/tasksRepository');
+var TasksService = require('./lib/tasks/tasksService');
 
-var labelsResource = require('./labels/labelsResource');
-var Label = require('./labels/label');
-var LabelsService = require('./labels/labelsService');
+var labelsResource = require('./lib/labels/labelsResource');
+var Label = require('./lib/labels/label');
+var LabelsService = require('./lib/labels/labelsService');
 
 module.exports = function(api) {
   var server = api.server;
