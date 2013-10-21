@@ -7,8 +7,8 @@ var Label = require('./lib/labels/label');
 var LabelsService = require('./lib/labels/labelsService');
 
 module.exports = function(api) {
-  var server = api.server;
-  var createRepository = api.createRepository;
+  var server = api.restServer;
+  var createRepository = api.db;
 
   return {
     setup: function() {
