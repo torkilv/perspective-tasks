@@ -6,17 +6,26 @@ var labelsResource = require('./lib/labels/labelsResource');
 var Label = require('./lib/labels/label');
 var LabelsService = require('./lib/labels/labelsService');
 
-module.exports = function(api) {
-  var server = api.restServer;
-  var createRepository = api.db;
+var coreRest = require('perspective-core-rest');
+var coreDb = require('perspective-core-db');
 
-  return {
-    setup: function() {
-      var tasksService = new TasksService(new TasksRepository(createRepository));
-      tasksResource(server, tasksService);
+var env = process.env;
 
-      var labelsService = new LabelsService(createRepository('labels', Label));
-      labelsResource(server, labelsService);
-    }
-  };
-};
+var serverConfig = coreRest.produceConfig(env);
+var dbConfig = coreDb.produceConfig(env);
+
+coreDb.db(dbConfig).then(function(db) {
+  var server = coreRest.createServer(serverConfig);
+
+  var tasksService = new TasksService(new TasksRepository(db.api));
+  tasksResource(server.api, tasksService);
+
+  var labelsService = new LabelsService(db.api('labels', Label));
+  labelsResource(server.api, labelsService);
+}).fail(function(error) {
+  console.error(error);
+  process.exit(1);
+});
+
+
+

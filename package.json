@@ -18,6 +18,9 @@
   "main": "index.js",
   "dependencies": {
     "perspective-core": "*",
+    "perspective-core-server": "*",
+    "perspective-core-rest": "*",
+    "perspective-core-db": "*",
     "q": "~0.9.7",
     "underscore": "~1.4.4"
   },
