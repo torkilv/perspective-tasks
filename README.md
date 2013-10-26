@@ -1,6 +1,5 @@
-perspective-api-tasks
+perspective-tasks
 =====================
-
 
 License
 -------
