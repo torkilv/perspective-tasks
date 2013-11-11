@@ -1,13 +1,13 @@
 {
-  "name": "perspective-api-tasks",
-  "version": "0.0.1",
+  "name": "perspective-tasks",
+  "version": "0.0.2",
   "description": "",
   "bugs": {
-    "url": "http://github.com/perspective/perspective-api-tasks/issues"
+    "url": "http://github.com/perspective/perspective-tasks/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/perspective/perspective-api-tasks.git"
+    "url": "git://github.com/perspective/perspective-tasks.git"
   },
   "contributors":[
     "Hans Magnus Inderberg <hinderberg@gmail.com> (http://hinderberg.no/)",
